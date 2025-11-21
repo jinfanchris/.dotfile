@@ -84,10 +84,7 @@ cd "$ZSH_CUSTOM_PLUG/autojump" || exit
 
 ln -sfn "$dir/oh-my-zsh/custom/themes/powerlevel10k" ~/.oh-my-zsh/custom/themes/powerlevel10k
 
-mkdir -p "$dir/vim/udir"
-mkdir -p "$dir/vim/bdir"
-
-ln -sfn "$dir/vim/udir" ~/.vim/udir
-ln -sfn "$dir/vim/bdir" ~/.vim/bdir
+mkdir -p "~/.vim/udir"
+mkdir -p "~/.vim/bdir"
 
 rm ~/.zcompdump*
