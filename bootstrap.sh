@@ -45,8 +45,10 @@ dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)" # dotfiles directory
 olddir=~/.dotfiles_old                              # old dotfiles backup directory
 echo "$dir"
 ZSH_CUSTOM_PLUG="oh-my-zsh/custom/plugins"
+ZSH_CUSTOM_THEME="oh-my-zsh/custom/themes"
 ZSH_PLUG="$ZSH_CUSTOM_PLUG/autojump $ZSH_CUSTOM_PLUG/zsh-autosuggestions $ZSH_CUSTOM_PLUG/zsh-completions $ZSH_CUSTOM_PLUG/zsh-syntax-highlighting $ZSH_CUSTOM_PLUG/zsh-history-substring-search $ZSH_CUSTOM_PLUG/zsh-git-prompt "
-submodules="zplug fzf tmux "$ZSH_PLUG
+ZSH_THEME="$ZSH_CUSTOM_THEME/powerlevel10k "
+submodules="zplug fzf tmux "$ZSH_PLUG$ZSH_THEME
 
 for file in $submodules; do
     echo "$file"
