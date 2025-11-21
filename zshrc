@@ -81,11 +81,7 @@ bindkey "^[[4~" end-of-line
 
 [[ ! -f ~/.fzf.zsh ]] || source ~/.fzf.zsh
 
-# source "$ZSH/custom/plugins/zsh-git-prompt/zshrc.sh"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-#
+source "$ZSH/custom/plugins/zsh-git-prompt/zshrc.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
