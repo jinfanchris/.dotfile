@@ -55,14 +55,14 @@ for file in $submodules; do
     git submodule update --init "$file"
 done
 
-files="bashrc bash_profile vimrc vim zshrc gitconfig gitignore_global export aliases fzf tmux tmux.config.local p10k.zsh "$ZSH_PLUG
+files="bashrc bash_profile vimrc zshrc gitconfig gitignore_global export aliases fzf tmux tmux.conf.local p10k.zsh "$ZSH_PLUG
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
 mkdir -p $olddir
 echo "done"
 
-# change to the dotfiles directory
+# change to the dotfiles directo
 echo -n "Changing to the $dir directory ..."
 cd "$dir" || exit
 echo "done"
@@ -84,7 +84,8 @@ cd "$ZSH_CUSTOM_PLUG/autojump" || exit
 
 ln -sfn "$dir/oh-my-zsh/custom/themes/powerlevel10k" ~/.oh-my-zsh/custom/themes/powerlevel10k
 
-mkdir -p "~/.vim/udir"
-mkdir -p "~/.vim/bdir"
+mv ~/.vim $olddir/.vim
+mkdir -p ~/.vim/udir
+mkdir -p ~/.vim/bdir
 
 rm ~/.zcompdump*
