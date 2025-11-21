@@ -5,11 +5,12 @@ if has("vms")
 else
   set backup		" keep a backup file (restore to previous version)
   set bdir-=.
-  set bdir+=~/.vimbdir
+
+  set bdir+=~/.vim/bdir
   if has('persistent_undo')
     set undofile	" keep an undo file (undo changes after closing)
 	set udir-=.
-	set udir+=~/.vimudir
+	set udir+=~/.vim/udir
   endif
 endif
 set hlsearch "搜索高亮"
