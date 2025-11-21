@@ -82,5 +82,7 @@ cd "$ZSH_CUSTOM_PLUG/autojump" || exit
 
 ~/.fzf/install
 
+ln -sfn "$dir/oh-my-zsh/custom/themes/powerlevel10k" ~/.oh-my-zsh/custom/themes/powerlevel10k
+
 rm ~/.zcompdump*
 rm ~/.zplug/zcompdump*
