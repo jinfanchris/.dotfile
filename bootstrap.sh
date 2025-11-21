@@ -53,7 +53,7 @@ for file in $submodules; do
     git submodule update --init "$file"
 done
 
-files="bashrc bash_profile vimrc vim zshrc gitconfig gitignore_global export aliases zplug fzf tmux tmux.config.local "$ZSH_PLUG
+files="bashrc bash_profile vimrc vim zshrc gitconfig gitignore_global export aliases zplug fzf tmux tmux.config.local p10k.zsh "$ZSH_PLUG
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
