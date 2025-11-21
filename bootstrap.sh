@@ -48,14 +48,14 @@ ZSH_CUSTOM_PLUG="oh-my-zsh/custom/plugins"
 ZSH_CUSTOM_THEME="oh-my-zsh/custom/themes"
 ZSH_PLUG="$ZSH_CUSTOM_PLUG/autojump $ZSH_CUSTOM_PLUG/zsh-autosuggestions $ZSH_CUSTOM_PLUG/zsh-completions $ZSH_CUSTOM_PLUG/zsh-syntax-highlighting $ZSH_CUSTOM_PLUG/zsh-history-substring-search $ZSH_CUSTOM_PLUG/zsh-git-prompt "
 ZSH_THEME="$ZSH_CUSTOM_THEME/powerlevel10k "
-submodules="zplug fzf tmux "$ZSH_PLUG$ZSH_THEME
+submodules="fzf tmux "$ZSH_PLUG$ZSH_THEME
 
 for file in $submodules; do
     echo "$file"
     git submodule update --init "$file"
 done
 
-files="bashrc bash_profile vimrc vim zshrc gitconfig gitignore_global export aliases zplug fzf tmux tmux.config.local p10k.zsh "$ZSH_PLUG
+files="bashrc bash_profile vimrc vim zshrc gitconfig gitignore_global export aliases fzf tmux tmux.config.local p10k.zsh "$ZSH_PLUG
 
 # create dotfiles_old in homedir
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
@@ -85,4 +85,3 @@ cd "$ZSH_CUSTOM_PLUG/autojump" || exit
 ln -sfn "$dir/oh-my-zsh/custom/themes/powerlevel10k" ~/.oh-my-zsh/custom/themes/powerlevel10k
 
 rm ~/.zcompdump*
-rm ~/.zplug/zcompdump*
