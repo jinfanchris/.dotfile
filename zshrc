@@ -87,3 +87,6 @@ source "$ZSH/custom/plugins/zsh-git-prompt/zshrc.sh"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # zprof
+
+# To export Jetson if exists
+[[ ! -f ~/.export.jetson ]] || source ~/.export.jetson

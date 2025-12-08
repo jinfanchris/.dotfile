@@ -89,3 +89,6 @@ mkdir -p ~/.vim/udir
 mkdir -p ~/.vim/bdir
 
 rm ~/.zcompdump*
+
+# TODO: install lazygit and stuffs
+mkdir -p ~/.local/bin
